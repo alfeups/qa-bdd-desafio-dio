@@ -11,7 +11,20 @@ public class CarrinhoPage extends BasePage {
 	
 	@FindBy(css =".cart_navigation .button-medium span")
 	protected WebElement botaoAcessarCheckout;
+	
+	@FindBy(css = ".cart_navigation .button-medium span")
+	protected WebElement botaoConfirmaEndereco;
+	
+	@FindBy(css = "div.radio input")
+	protected WebElement botaoModoEnvio;
 		
+	@FindBy(css = ".checker span input")
+	protected WebElement botaoConcordarTermos;
+	
+	@FindBy(css = ".cart_navigation .button-medium span")
+	protected WebElement botaoSeguirParaPagamento;
+	
+	
 	
 	public CarrinhoPage() {
 		PageFactory.initElements(Hooks.getDriver(), this);
@@ -32,6 +45,20 @@ public class CarrinhoPage extends BasePage {
 		botaoAcessarCheckout.click();
 		log("Seguiu para checkout.");
 		
+	}
+
+	public void confirmarEndereço() {
+		botaoConfirmaEndereco.click();
+		log("Confirmou o endereço");
+	}
+
+	public void escolherModoEnvio() {
+		botaoModoEnvio.click();
+		log("Modo de envio escolhido");
+		botaoModoEnvio.click();
+		log("Concordou com os termos");
+		botaoSeguirParaPagamento.click();
+		log("Seguiu para pagamento");
 	}
 
 }

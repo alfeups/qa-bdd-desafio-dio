@@ -21,5 +21,17 @@ public class CarrinhoSteps {
 		CarrinhoPage carrinhoPage = new CarrinhoPage();
 		carrinhoPage.acessarCheckout();
 	}
+	
+	@E("^confirma o endereço de entrega")
+	public void confirmarEndereço() {
+		CarrinhoPage carrinhoPage = new CarrinhoPage();
+		carrinhoPage.confirmarEndereço();
+	}
+	
+	@E("^escolhe a forma de transporte")
+	public void escolherModoEnvio() {
+		CarrinhoPage carrinhoPage = new CarrinhoPage();
+		carrinhoPage.escolherModoEnvio();
+	}
 }
 	
