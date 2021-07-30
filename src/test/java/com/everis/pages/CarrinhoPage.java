@@ -1,11 +1,17 @@
 package com.everis.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.everis.util.Hooks;
 
 public class CarrinhoPage extends BasePage {
+	
+	@FindBy(css =".cart_navigation .button-medium span")
+	protected WebElement botaoAcessarCheckout;
+		
 	
 	public CarrinhoPage() {
 		PageFactory.initElements(Hooks.getDriver(), this);
@@ -19,6 +25,13 @@ public class CarrinhoPage extends BasePage {
 		}
 		logFail("Deveria ter apresentado o produto [" + nomeProduto + "] no carrinho.");
 		return false;
+	}
+
+	
+	public void acessarCheckout() {
+		botaoAcessarCheckout.click();
+		log("Seguiu para checkout.");
+		
 	}
 
 }

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.everis.util.Hooks;
 
-public class ResultadoPesquisaPage extends BasePage {
+public class DetalheProdutoPage extends BasePage {
 
 	@FindBy(xpath = "//*[text()='Add to cart']")
 	protected WebElement botaoAdicionarAoCarrinho;
@@ -15,7 +15,7 @@ public class ResultadoPesquisaPage extends BasePage {
 	@FindBy(css = "[title='Proceed to checkout']")
 	protected WebElement botaoProsseguir;
 	
-	public ResultadoPesquisaPage() {
+	public DetalheProdutoPage() {
 		PageFactory.initElements(Hooks.getDriver(), this);
 	}
 
@@ -29,6 +29,11 @@ public class ResultadoPesquisaPage extends BasePage {
 
 	public static void acessarProduto(String nomeProduto) {
 			
+	}
+
+	public void aumentarQuantidadeProduto() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
