@@ -24,7 +24,7 @@ public class LoginPage extends BasePage {
 	
 	public void fazerLogin(String emailaddress, String password) {
         usernameInput.sendKeys("admin@hotmail.com");
-        passwordInput.sendKeys("12345");
+        passwordInput.sendKeys("/Ox34Vh90");
         SubmitLogin.click();
     }
 	

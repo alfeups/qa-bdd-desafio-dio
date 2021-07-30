@@ -18,6 +18,9 @@ public class LoginSteps {
 	public void fazerLogin(String emailaddress, String password) {
 		LoginPage loginPage = new LoginPage();
 		loginPage.fazerLogin(emailaddress, password);
+		
+		emailaddress = "admin@hotmail.com" ;
+		password = "/Ox34Vh90";
 	}
 	
 }

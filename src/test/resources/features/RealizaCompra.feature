@@ -23,7 +23,7 @@
   	E pesquisa pelo produto "Blouse"
   	E adiciona o produto "Blouse" ao carrinho
   	E acessa o checkout
-  	E realiza login "admin@hotmail.com" "123456"
+  	E realiza login "admin@hotmail.com" "/Ox34Vh90"
   	# E confirma o endereço de entrega
   	# E escolhe a forma de transporte
   	# Quando o pagamento for confirmado
