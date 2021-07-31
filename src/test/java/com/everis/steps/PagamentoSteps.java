@@ -2,6 +2,9 @@ package com.everis.steps;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
 import com.everis.util.Hooks;
 
 import com.everis.pages.CarrinhoPage;
@@ -22,11 +25,10 @@ public class PagamentoSteps {
 		PagamentoPage pagamentoPage = new PagamentoPage();
 		pagamentoPage.pagarPorTransferenciaBancaria();
 	}
-		
-	@Entao("Entao deve ser apresentado a mensagem \"( .*)\"$")
-	public void orderCompleted() {
+											
+	@Entao("^deve ser apresentado a mensagem \"(.*)\"$")
+	public void orderCompleted(String string) {
 		PagamentoPage pagamentoPage = new PagamentoPage();
 		pagamentoPage.orderCompleted();
-	}
-	
+}
 }
