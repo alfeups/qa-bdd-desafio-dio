@@ -26,6 +26,6 @@
   	E realiza login "admin@hotmail.com" "/Ox34Vh90"
   	E confirma o endereço de entrega
   	E escolhe a forma de transporte
-  	Quando o pagamento for confirmado
+  	E quando o pagamento for confirmado
   	Entao deve ser apresentado a mensagem "Your order on My Store is complete."
 

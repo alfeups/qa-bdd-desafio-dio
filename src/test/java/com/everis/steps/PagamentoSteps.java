@@ -17,7 +17,7 @@ import io.cucumber.java.pt.Quando;
 public class PagamentoSteps {
 	
 	
-	@Quando("^o pagamento for confirmado$")
+	@E("quando o pagamento for confirmado")
 	public void pagarPorTransferenciaBancaria() {
 		PagamentoPage pagamentoPage = new PagamentoPage();
 		pagamentoPage.pagarPorTransferenciaBancaria();
@@ -30,11 +30,3 @@ public class PagamentoSteps {
 	}
 	
 }
-/*	
-	@Quando("^o pagamento for confirmado com cheque")
-	public void pagarComCheque() {
-		PagamentoPage pagamentoPage = new PagamentoPage();
-		pagamentoPage.pagarComCheque();
-
-	}
- */

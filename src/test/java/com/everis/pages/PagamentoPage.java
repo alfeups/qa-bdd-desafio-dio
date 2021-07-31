@@ -19,6 +19,7 @@ public class PagamentoPage extends BasePage {
 
 	
 	public PagamentoPage() {
+		PageFactory.initElements(Hooks.getDriver(), this);
 	}
 
 	public void pagarPorTransferenciaBancaria() {
@@ -33,13 +34,3 @@ public class PagamentoPage extends BasePage {
 	}
 	
 }
-/*	
-
-public void pagarComCheque() {
-	botaoPagamentoCheque.click();
-	log("O pagamento foi efetuado.");
-	
-}		
-	*/
-//@FindBy(css ="p.payment_module a.cheque")
-//protected WebElement botaoPagamentoCheque;
