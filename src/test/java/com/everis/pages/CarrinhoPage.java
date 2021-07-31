@@ -47,7 +47,7 @@ public class CarrinhoPage extends BasePage {
 		
 	}
 
-	public void confirmarEndereço() {
+	public void confirmarEndereco() {
 		botaoConfirmaEndereco.click();
 		log("Confirmou o endereço");
 	}
@@ -55,7 +55,7 @@ public class CarrinhoPage extends BasePage {
 	public void escolherModoEnvio() {
 		botaoModoEnvio.click();
 		log("Modo de envio escolhido");
-		botaoModoEnvio.click();
+		botaoConcordarTermos.click();
 		log("Concordou com os termos");
 		botaoSeguirParaPagamento.click();
 		log("Seguiu para pagamento");

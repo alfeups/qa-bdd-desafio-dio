@@ -23,9 +23,9 @@ public class CarrinhoSteps {
 	}
 	
 	@E("^confirma o endereço de entrega")
-	public void confirmarEndereço() {
+	public void confirmarEndereco() {
 		CarrinhoPage carrinhoPage = new CarrinhoPage();
-		carrinhoPage.confirmarEndereço();
+		carrinhoPage.confirmarEndereco();
 	}
 	
 	@E("^escolhe a forma de transporte")
